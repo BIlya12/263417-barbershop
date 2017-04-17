@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8">
-	<title>каталог товаров</title>
+	<title>Каталог товаров</title>
 </head>
 <body>
  <header class="main_header">
    <div class="container">
     <div class="logo_header">
-    <img src="#" width="368" height="100">
+    <img src="#" width="368" height="100" alt="logo">
     </div>
- 	<nav>
- 		<ul>
+ 	<nav class="main_navigation">
+ 		<ul class="pages">
  		 <li><a  href="#">Информация</a></li>
  		 <li><a  href="#">Новости</a></li>
  		 <li><a  href="#">Прайс лист</a></li>
@@ -26,103 +26,85 @@
  </header>
  <main class="container">
    <h1>Средства для ухода</h1>
-   <ul>
+   <ul class="breadcrumb">
  		 <li><a  href="#">Главная</a></li>
  		 <li><a  href="#">Магазин</a></li>
  		 <li><a  href="#">Средства для ухода</a></li>
     </ul>
   <div class="manufacturers_block">
-    <h2>Производители:</h2>
-    <ul>
-    <li><label for="manufacture_1"><input id="manufacture_1" type="checkbox">Baxter of California</label></li>
-    <li><label for="manufacture_2"><input id="manufacture_2" type="checkbox">Mr Natty</label></li>
-    <li><label for="manufacture_3"><input id="manufacture_3" type="checkbox">Suavecito</label></li>
-    <li><label for="manufacture_4"><input id="manufacture_4" type="checkbox">Malin-Goetz</label></li>
-    <li><label for="manufacture_5"><input id="manufacture_5" type="checkbox">Murray's</label></li>
-    <li><label for="manufacture_6"><input id="manufacture_6" type="checkbox">American Crew</label></li>
-    </ul>
+    <legend>Производители:</legend>
+    <form>
+    <fieldset><input id="manufacture_1" type="checkbox" name="" checked>Baxter of California</fieldset>
+    <fieldset><input id="manufacture_2" type="checkbox" name="">Mr Natty</fieldset>
+    <fieldset><input id="manufacture_3" type="checkbox" name="" checked>Suavecito</fieldset>
+    <fieldset><input id="manufacture_4" type="checkbox" name="">Malin-Goetz</fieldset>
+    <fieldset><input id="manufacture_5" type="checkbox" name="" >Murray's</fieldset>
+    <fieldset><input id="manufacture_6" type="checkbox" name="" checked>American Crew</fieldset>
+    </form>
    </div>
    <div class="items_group_block">
-    <h2>Группы товаров:</h2>
-    <ul>
-     <li><label for="item_group_1"><input id="item_group_1" type="radio">Бритвенные принадлежности</label></li>
-     <li><label for="item_group_2"><input id="item_group_2" type="radio">Средства для ухода</label></li>
-     <li><label for="item_group_3"><input id="item_group_3" type="radio">Акссесуары</label></li>
-    </ul><br>
+    <legend>Группы товаров:</legend>
+    <form>
+    <fieldset><input id="item_group_1" type="radio" name="item_group_1" >Бритвенные принадлежности</fieldset>
+    <fieldset><input id="item_group_2" type="radio" name="item_group_2" checked>Средства для ухода</fieldset>
+    <fieldset><input id="item_group_3" type="radio" name="item_group_3">Акссесуары</fieldset>
+    <form>    
     <button class="btn" type="submit">Показать</button>
    </div>
-   <table>
-    <tr>
-     <td>
-      <article class="item">
-       <img src="#" width="368" height="204">
-       <h4>Набор для путешествий</h4>
-       <h3>"BAXTER OF CALIFORNIA"</h3>
-       <p class="item_price">2900 руб.</p>
+     <article class="item">
+       <img src="#" width="368" height="204" alt="BAXTER OF CALIFORNIA">
+       <span>Набор для путешествий</span>
+       <h2>"BAXTER OF CALIFORNIA"</h2>
+       <span class="item_price">2900 руб.</span>
        <a class="buy_item" href="#">Купить</a>
       </article>
-     </td>
-     <td>
-      <article class="item">
-        <img src="#" width="368" height="204">
-        <h4>Набор для путешествий</h4>
-        <h3>"BAXTER OF CALIFORNIA"</h3>
-        <p class="item_price">750 руб.</p>
+       <article class="item">
+        <img src="#" width="368" height="204" alt="BAXTER OF CALIFORNIA">
+        <span>Набор для путешествий</span>
+        <h2>"BAXTER OF CALIFORNIA"</h2>
+        <span class="item_price">750 руб.</span>
         <a class="buy_item" href="#">Купить</a>
       </article>
-     </td>
-     <td>
       <article class="item">
-       <img src="#" width="368" height="204">
-       <h4>Набор для путешествий</h4>
-       <h3>"SUAVECITO"</h3>
-       <p class="item_price">290 руб.</p>
+       <img src="#" width="368" height="204" alt="SUAVECITO">
+       <span>Набор для путешествий</span>
+       <h2>"SUAVECITO"</h2>
+       <span class="item_price">290 руб.</span>
        <a class="buy_item" href="#">Купить</a>
       </article>
-     </td>
-    </tr>
-    <tr>
-     <td>
       <article class="item">
-       <img src="#" width="368" height="204" >
-       <h4>Набор для путешествий</h4>
-       <h3>"AMERICAN CREW"</h3>
-       <p class="item_price">500 руб.</p>
+       <img src="#" width="368" height="204" alt="AMERICAN CREW">
+       <span>Набор для путешествий</span>
+       <h2>"AMERICAN CREW"</h2>
+       <span class="item_price">500 руб.</span>
        <a class="buy_item" href="#">Купить</a>
       </article>
-     </td>
-     <td>
       <article class="item">
-       <img src="#" width="368" height="204">
-       <h4>Набор для путешествий</h4>
-       <h3>"AMERICAN CREW"</h3>
-       <p class="item_price">300 руб.</p>
+       <img src="#" width="368" height="204" alt="AMERICAN CREW">
+       <span>Набор для путешествий</span>
+       <h2>"AMERICAN CREW"</h2>
+       <span class="item_price">300 руб.</span>
        <a class="buy_item" href="#">Купить</a>
       </article>
-     </td>
-     <td>
       <article class="item">
-       <img src="#" width="368" height="204">
-       <h4>Набор для путешествий</h4>
-       <h3>"BAXTER OF CALIFORNIA"</h3>
-       <p class="item_price">3900 руб.</p>
+       <img src="#" width="368" height="204" alt="BAXTER OF CALIFORNIA">
+       <span>Набор для путешествий</span>
+       <h2>"BAXTER OF CALIFORNIA"</h2>
+       <span class="item_price">3900 руб.</span>
        <a class="buy_item" href="#">Купить</a>
       </article>
-     </td>
-    </tr>
-   </table><br>
-   <div class="number_of_pages">
+   <div class="pagination">
    <a class="page_number" href="#">1</a>
    <a class="page_number" href="#">2</a>
    <a class="page_number" href="#">3</a>
-   </div><br>
+   </div>
   </main>
   <footer>
  	<div class="container">
        <section class="footer_contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
+          <a href="#">Как нас найти?</a>
           Телефон: +7 (812) 666-02-66
         </section>
         <section class="footer_social">
