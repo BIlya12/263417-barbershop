@@ -8,7 +8,7 @@
  <header class="main_header">
    <div class="container">
     <div class="logo_header">
-    <img src="#" width="368" height="100" alt="logo">
+    <a href="#"><img src="#" width="368" height="100" alt="logo"></a>
     </div>
  	<nav class="main_navigation">
  		<ul class="pages">
@@ -26,30 +26,30 @@
  </header>
  <main class="container">
    <h1>Средства для ухода</h1>
-   <ul class="breadcrumb">
+   <ul>
  		 <li><a  href="#">Главная</a></li>
  		 <li><a  href="#">Магазин</a></li>
  		 <li><a  href="#">Средства для ухода</a></li>
     </ul>
   <div class="manufacturers_block">
+        <form>
+    <fieldset>
     <legend>Производители:</legend>
-    <form>
-    <fieldset><input id="manufacture_1" type="checkbox" name="" checked>Baxter of California</fieldset>
-    <fieldset><input id="manufacture_2" type="checkbox" name="">Mr Natty</fieldset>
-    <fieldset><input id="manufacture_3" type="checkbox" name="" checked>Suavecito</fieldset>
-    <fieldset><input id="manufacture_4" type="checkbox" name="">Malin-Goetz</fieldset>
-    <fieldset><input id="manufacture_5" type="checkbox" name="" >Murray's</fieldset>
-    <fieldset><input id="manufacture_6" type="checkbox" name="" checked>American Crew</fieldset>
-    </form>
-   </div>
-   <div class="items_group_block">
+     <label><input id="manufacture_1" type="checkbox" value="manufacture_1" name="Baxter of California" checked>Baxter of California</label>
+     <label><input id="manufacture_2" type="checkbox" value="manufacture_2" name="Mr Natty">Mr Natty</label>
+     <label><input id="manufacture_3" type="checkbox" value="manufacture_3" name="Suavecito" checked>Suavecito</label>
+     <label><input id="manufacture_4" type="checkbox" value="manufacture_4" name="Malin-Goetz">Malin-Goetz</label>
+     <label><input id="manufacture_5" type="checkbox" value="manufacture_5" name="Murray's" >Murray's</label>
+     <label><input id="manufacture_6" type="checkbox" value="manufacture_6" name="American Crew" checked>American Crew</label>
+    </fieldset>
+    <fieldset>
     <legend>Группы товаров:</legend>
-    <form>
-    <fieldset><input id="item_group_1" type="radio" name="item_group_1" >Бритвенные принадлежности</fieldset>
-    <fieldset><input id="item_group_2" type="radio" name="item_group_2" checked>Средства для ухода</fieldset>
-    <fieldset><input id="item_group_3" type="radio" name="item_group_3">Акссесуары</fieldset>
-    <form>    
-    <button class="btn" type="submit">Показать</button>
+      <label><input id="item_group_1" type="radio" name="item_group_1" value="Бритвенные принадлежности">Бритвенные принадлежности </label>
+      <label><input id="item_group_2" type="radio" name="item_group_2" value="Средства для ухода" checked>Средства для ухода </label>
+      <label><input id="item_group_3" type="radio" name="item_group_3" value="Акссесуары">Акссесуары </label>
+     <button class="btn" type="submit">Показать</button>
+    </fieldset>
+    </form>
    </div>
      <article class="item">
        <img src="#" width="368" height="204" alt="BAXTER OF CALIFORNIA">
@@ -105,12 +105,17 @@
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a>
-          Телефон: +7 (812) 666-02-66
+          Телефон:<a class="number" href="#"> +7 (812) 666-02-66</a>
         </section>
         <section class="footer_social">
           <p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </section>
         <section class="footer_copyright">
+        <p>Разработано</p>
+        <a class="btn" href="http://htmlacademy.ru">HTML Academy</a>
        </section>
      </div>
   </footer>
