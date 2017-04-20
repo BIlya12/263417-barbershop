@@ -1,0 +1,15 @@
+body{
+  font-weight: 700;
+  font-color:#FFFFFF;
+  font-family: pt-sans-narrow, sans-serif;
+  font-size: 14px;
+  
+}
+h1{
+	font-size: 30px;
+	line-height: 42px;
+}
+h2{
+	font-size: 14px;
+	line-height: 18px; 
+}
